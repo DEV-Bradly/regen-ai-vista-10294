@@ -14,7 +14,135 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      carbon_tracking: {
+        Row: {
+          area_size: number | null
+          carbon_sequestered: number
+          created_at: string | null
+          id: string
+          location_lat: number | null
+          location_lng: number | null
+          measurement_date: string | null
+          notes: string | null
+          tree_count: number | null
+          user_id: string
+          vegetation_type: string | null
+        }
+        Insert: {
+          area_size?: number | null
+          carbon_sequestered: number
+          created_at?: string | null
+          id?: string
+          location_lat?: number | null
+          location_lng?: number | null
+          measurement_date?: string | null
+          notes?: string | null
+          tree_count?: number | null
+          user_id: string
+          vegetation_type?: string | null
+        }
+        Update: {
+          area_size?: number | null
+          carbon_sequestered?: number
+          created_at?: string | null
+          id?: string
+          location_lat?: number | null
+          location_lng?: number | null
+          measurement_date?: string | null
+          notes?: string | null
+          tree_count?: number | null
+          user_id?: string
+          vegetation_type?: string | null
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          created_at: string | null
+          email: string
+          first_name: string
+          id: string
+          last_name: string
+          phone_number: string
+          region: string
+          updated_at: string | null
+          user_id: string
+        }
+        Insert: {
+          created_at?: string | null
+          email: string
+          first_name: string
+          id?: string
+          last_name: string
+          phone_number: string
+          region: string
+          updated_at?: string | null
+          user_id: string
+        }
+        Update: {
+          created_at?: string | null
+          email?: string
+          first_name?: string
+          id?: string
+          last_name?: string
+          phone_number?: string
+          region?: string
+          updated_at?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      soil_analyses: {
+        Row: {
+          analysis_date: string | null
+          created_at: string | null
+          id: string
+          location_lat: number | null
+          location_lng: number | null
+          moisture_content: number | null
+          nitrogen_level: number | null
+          organic_matter: number | null
+          ph_level: number | null
+          phosphorus_level: number | null
+          potassium_level: number | null
+          recommendations: string | null
+          soil_type: string | null
+          user_id: string
+        }
+        Insert: {
+          analysis_date?: string | null
+          created_at?: string | null
+          id?: string
+          location_lat?: number | null
+          location_lng?: number | null
+          moisture_content?: number | null
+          nitrogen_level?: number | null
+          organic_matter?: number | null
+          ph_level?: number | null
+          phosphorus_level?: number | null
+          potassium_level?: number | null
+          recommendations?: string | null
+          soil_type?: string | null
+          user_id: string
+        }
+        Update: {
+          analysis_date?: string | null
+          created_at?: string | null
+          id?: string
+          location_lat?: number | null
+          location_lng?: number | null
+          moisture_content?: number | null
+          nitrogen_level?: number | null
+          organic_matter?: number | null
+          ph_level?: number | null
+          phosphorus_level?: number | null
+          potassium_level?: number | null
+          recommendations?: string | null
+          soil_type?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
