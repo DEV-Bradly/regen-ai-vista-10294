@@ -4,7 +4,19 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import Auth from "./pages/Auth";
+import Dashboard from "./pages/Dashboard";
+import SoilAnalyzer from "./pages/SoilAnalyzer";
+import Map from "./pages/Map";
+import CarbonTracker from "./pages/CarbonTracker";
+import Weather from "./pages/Weather";
+import KenyaInsights from "./pages/KenyaInsights";
+import Financial from "./pages/Financial";
+import Team from "./pages/Team";
+import About from "./pages/About";
+import EduHealth from "./pages/EduHealth";
 import NotFound from "./pages/NotFound";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +28,17 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+          <Route path="/soil-analyzer" element={<ProtectedRoute><SoilAnalyzer /></ProtectedRoute>} />
+          <Route path="/map" element={<ProtectedRoute><Map /></ProtectedRoute>} />
+          <Route path="/carbon-tracker" element={<ProtectedRoute><CarbonTracker /></ProtectedRoute>} />
+          <Route path="/weather" element={<ProtectedRoute><Weather /></ProtectedRoute>} />
+          <Route path="/kenya-insights" element={<ProtectedRoute><KenyaInsights /></ProtectedRoute>} />
+          <Route path="/financial" element={<ProtectedRoute><Financial /></ProtectedRoute>} />
+          <Route path="/team" element={<ProtectedRoute><Team /></ProtectedRoute>} />
+          <Route path="/about" element={<ProtectedRoute><About /></ProtectedRoute>} />
+          <Route path="/eduhealth" element={<ProtectedRoute><EduHealth /></ProtectedRoute>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
