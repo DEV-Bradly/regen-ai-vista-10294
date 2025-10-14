@@ -15,10 +15,10 @@ const Navigation = () => {
     { name: "Carbon Tracker", path: "/carbon-tracker" },
     { name: "Weather", path: "/weather" },
     { name: "Kenya Insights", path: "/kenya-insights" },
+    { name: "Crop Yield", path: "/crop-yield-predictor" },
     { name: "Financial", path: "/financial" },
-    { name: "Team", path: "/team" },
-    { name: "About", path: "/about" },
     { name: "EduHealth", path: "/eduhealth" },
+    { name: "Settings", path: "/settings" },
   ];
 
   const isActive = (path: string) => location.pathname === path;

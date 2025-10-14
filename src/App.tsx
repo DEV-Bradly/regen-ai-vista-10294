@@ -15,6 +15,8 @@ import Financial from "./pages/Financial";
 import Team from "./pages/Team";
 import About from "./pages/About";
 import EduHealth from "./pages/EduHealth";
+import CropYieldPredictor from "./pages/CropYieldPredictor";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
 
@@ -39,6 +41,8 @@ const App = () => (
           <Route path="/team" element={<ProtectedRoute><Team /></ProtectedRoute>} />
           <Route path="/about" element={<ProtectedRoute><About /></ProtectedRoute>} />
           <Route path="/eduhealth" element={<ProtectedRoute><EduHealth /></ProtectedRoute>} />
+          <Route path="/crop-yield-predictor" element={<ProtectedRoute><CropYieldPredictor /></ProtectedRoute>} />
+          <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

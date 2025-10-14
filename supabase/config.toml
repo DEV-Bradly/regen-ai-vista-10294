@@ -1,1 +1,7 @@
 project_id = "hbhtxjzfhstnoadkumen"
+
+[functions.analyze-soil-image]
+verify_jwt = false
+
+[functions.predict-crop-yield]
+verify_jwt = false
