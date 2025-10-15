@@ -14,16 +14,342 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      admin_contacts: {
+        Row: {
+          admin_id: string
+          contact_type: string
+          id: string
+          message: string
+          recipient_id: string
+          sent_at: string | null
+          status: string | null
+        }
+        Insert: {
+          admin_id: string
+          contact_type: string
+          id?: string
+          message: string
+          recipient_id: string
+          sent_at?: string | null
+          status?: string | null
+        }
+        Update: {
+          admin_id?: string
+          contact_type?: string
+          id?: string
+          message?: string
+          recipient_id?: string
+          sent_at?: string | null
+          status?: string | null
+        }
+        Relationships: []
+      }
+      carbon_tracking: {
+        Row: {
+          area_size: number | null
+          carbon_credits: number | null
+          carbon_sequestered: number
+          created_at: string | null
+          credit_value: number | null
+          id: string
+          location_lat: number | null
+          location_lng: number | null
+          measurement_date: string | null
+          notes: string | null
+          tree_count: number | null
+          user_id: string
+          vegetation_improvement_percentage: number | null
+          vegetation_type: string | null
+          verified: boolean | null
+        }
+        Insert: {
+          area_size?: number | null
+          carbon_credits?: number | null
+          carbon_sequestered: number
+          created_at?: string | null
+          credit_value?: number | null
+          id?: string
+          location_lat?: number | null
+          location_lng?: number | null
+          measurement_date?: string | null
+          notes?: string | null
+          tree_count?: number | null
+          user_id: string
+          vegetation_improvement_percentage?: number | null
+          vegetation_type?: string | null
+          verified?: boolean | null
+        }
+        Update: {
+          area_size?: number | null
+          carbon_credits?: number | null
+          carbon_sequestered?: number
+          created_at?: string | null
+          credit_value?: number | null
+          id?: string
+          location_lat?: number | null
+          location_lng?: number | null
+          measurement_date?: string | null
+          notes?: string | null
+          tree_count?: number | null
+          user_id?: string
+          vegetation_improvement_percentage?: number | null
+          vegetation_type?: string | null
+          verified?: boolean | null
+        }
+        Relationships: []
+      }
+      crop_predictions: {
+        Row: {
+          ai_insights: string | null
+          confidence_score: number | null
+          created_at: string | null
+          crop_type: string | null
+          id: string
+          mean_temp: number | null
+          ndvi_mean: number | null
+          precipitation_sum: number | null
+          predicted_yield: number | null
+          region: string
+          season: string
+          soil_organic_carbon: number | null
+          user_id: string
+        }
+        Insert: {
+          ai_insights?: string | null
+          confidence_score?: number | null
+          created_at?: string | null
+          crop_type?: string | null
+          id?: string
+          mean_temp?: number | null
+          ndvi_mean?: number | null
+          precipitation_sum?: number | null
+          predicted_yield?: number | null
+          region: string
+          season: string
+          soil_organic_carbon?: number | null
+          user_id: string
+        }
+        Update: {
+          ai_insights?: string | null
+          confidence_score?: number | null
+          created_at?: string | null
+          crop_type?: string | null
+          id?: string
+          mean_temp?: number | null
+          ndvi_mean?: number | null
+          precipitation_sum?: number | null
+          predicted_yield?: number | null
+          region?: string
+          season?: string
+          soil_organic_carbon?: number | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      financial_records: {
+        Row: {
+          amount: number
+          category: string
+          created_at: string | null
+          date: string | null
+          description: string | null
+          id: string
+          type: string
+          user_id: string
+        }
+        Insert: {
+          amount: number
+          category: string
+          created_at?: string | null
+          date?: string | null
+          description?: string | null
+          id?: string
+          type: string
+          user_id: string
+        }
+        Update: {
+          amount?: number
+          category?: string
+          created_at?: string | null
+          date?: string | null
+          description?: string | null
+          id?: string
+          type?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          created_at: string | null
+          email: string
+          first_name: string
+          id: string
+          land_size: number | null
+          last_name: string
+          phone_number: string
+          region: string
+          updated_at: string | null
+          user_id: string
+        }
+        Insert: {
+          created_at?: string | null
+          email: string
+          first_name: string
+          id?: string
+          land_size?: number | null
+          last_name: string
+          phone_number: string
+          region: string
+          updated_at?: string | null
+          user_id: string
+        }
+        Update: {
+          created_at?: string | null
+          email?: string
+          first_name?: string
+          id?: string
+          land_size?: number | null
+          last_name?: string
+          phone_number?: string
+          region?: string
+          updated_at?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      soil_analyses: {
+        Row: {
+          ai_insights: string | null
+          analysis_date: string | null
+          created_at: string | null
+          id: string
+          image_url: string | null
+          location_lat: number | null
+          location_lng: number | null
+          moisture_content: number | null
+          nitrogen_level: number | null
+          organic_matter: number | null
+          ph_level: number | null
+          phosphorus_level: number | null
+          potassium_level: number | null
+          recommendations: string | null
+          restoration_recommendations: Json | null
+          soil_health_score: number | null
+          soil_type: string | null
+          user_id: string
+        }
+        Insert: {
+          ai_insights?: string | null
+          analysis_date?: string | null
+          created_at?: string | null
+          id?: string
+          image_url?: string | null
+          location_lat?: number | null
+          location_lng?: number | null
+          moisture_content?: number | null
+          nitrogen_level?: number | null
+          organic_matter?: number | null
+          ph_level?: number | null
+          phosphorus_level?: number | null
+          potassium_level?: number | null
+          recommendations?: string | null
+          restoration_recommendations?: Json | null
+          soil_health_score?: number | null
+          soil_type?: string | null
+          user_id: string
+        }
+        Update: {
+          ai_insights?: string | null
+          analysis_date?: string | null
+          created_at?: string | null
+          id?: string
+          image_url?: string | null
+          location_lat?: number | null
+          location_lng?: number | null
+          moisture_content?: number | null
+          nitrogen_level?: number | null
+          organic_matter?: number | null
+          ph_level?: number | null
+          phosphorus_level?: number | null
+          potassium_level?: number | null
+          recommendations?: string | null
+          restoration_recommendations?: Json | null
+          soil_health_score?: number | null
+          soil_type?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      user_preferences: {
+        Row: {
+          created_at: string | null
+          crop_recommendations: boolean | null
+          email_notifications: boolean | null
+          id: string
+          theme: string | null
+          updated_at: string | null
+          user_id: string
+          weather_alerts: boolean | null
+        }
+        Insert: {
+          created_at?: string | null
+          crop_recommendations?: boolean | null
+          email_notifications?: boolean | null
+          id?: string
+          theme?: string | null
+          updated_at?: string | null
+          user_id: string
+          weather_alerts?: boolean | null
+        }
+        Update: {
+          created_at?: string | null
+          crop_recommendations?: boolean | null
+          email_notifications?: boolean | null
+          id?: string
+          theme?: string | null
+          updated_at?: string | null
+          user_id?: string
+          weather_alerts?: boolean | null
+        }
+        Relationships: []
+      }
+      user_roles: {
+        Row: {
+          created_at: string | null
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string | null
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string | null
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin" | "user"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +476,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin", "user"],
+    },
   },
 } as const

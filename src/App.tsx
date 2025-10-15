@@ -17,6 +17,7 @@ import About from "./pages/About";
 import EduHealth from "./pages/EduHealth";
 import CropYieldPredictor from "./pages/CropYieldPredictor";
 import Settings from "./pages/Settings";
+import AdminDashboard from "./pages/AdminDashboard";
 import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
 
@@ -43,6 +44,7 @@ const App = () => (
           <Route path="/eduhealth" element={<ProtectedRoute><EduHealth /></ProtectedRoute>} />
           <Route path="/crop-yield-predictor" element={<ProtectedRoute><CropYieldPredictor /></ProtectedRoute>} />
           <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
+          <Route path="/admin" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,5 +1,33 @@
-# Welcome to land degradation project
+# landRegen - AI-Powered Land Restoration Platform
 
-## Project info
+## Overview
 
-**URL**: https://lovable.dev/projects/578c8668-1c3c-43af-ad80-9f8e9b47d
+landRegen revolutionizes land regeneration through AI technology, combining real-time monitoring, intelligent analysis, and collaborative tools for sustainable agriculture.
+
+## Features
+
+- 🌱 AI-Powered Soil Analysis with image upload
+- 🌍 Interactive GPS-enabled Land Mapping (Satellite, NDVI, Terrain)
+- 📊 Carbon Credit Tracking & Verification
+- 🌦️ 7-Day Weather Forecasting
+- 🇰🇪 Kenya Regional Agricultural Insights
+- 🌾 Crop Yield Prediction
+- 💰 Financial Management Tools
+- 📚 Educational Resources Hub
+- 👥 Secure Admin Dashboard
+
+## Technology
+
+React • TypeScript • Tailwind CSS • Lovable Cloud • AI Gateway
+
+## Deployment
+
+**Live App**: https://77745704-c9a5-4ad5-a5b2-0c77b8bbec3e.lovableproject.com
+
+## Creator
+
+**youngdev kip**
+- GitHub: [@youngdevkip](https://github.com/youngdevkip)
+- Email: bradlykiptanui@gmail.com
+
+© 2025 by youngdev kip. All rights reserved.
