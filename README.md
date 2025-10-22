@@ -28,7 +28,7 @@ React • TypeScript • Tailwind CSS • Lovable Cloud • AI Gateway
 ## Creator
 
 **youngdev kip**
-- GitHub: [@youngdevkip](https://github.com/youngdevkip)
+- GitHub:https://github.com/DEV-Bradly/ (https://github.com/youngdevkip)
 - Email: bradlykiptanui@gmail.com
 
 © 2025 by youngdev kip. All rights reserved.
