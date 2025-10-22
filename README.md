@@ -23,6 +23,7 @@ React • TypeScript • Tailwind CSS • Lovable Cloud • AI Gateway
 ## Deployment
 
 **Live App**: https://77745704-c9a5-4ad5-a5b2-0c77b8bbec3e.lovableproject.com
+    **Live App**: https://regen-ai-vista-10294.lovable.app
 
 ## Creator
 
