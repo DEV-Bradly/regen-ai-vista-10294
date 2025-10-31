@@ -85,13 +85,18 @@ const About = () => {
               <CardTitle className="text-3xl text-center">About the Creator</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 text-center">
+              <div className="space-y-2">
+                <p className="text-2xl font-semibold">DEV-TECH "Kip"</p>
+                <p className="text-lg text-muted-foreground">youngdev kip</p>
+                <p className="text-sm text-muted-foreground">bradlykiptanui@gmail.com</p>
+              </div>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 landRegen was designed and developed with a passion for combining technology and environmental
                 sustainability. Learn more about the creator's work and portfolio.
               </p>
               <Button size="lg" asChild>
                 <a
-                  href="https://github.com/youngdevkip"
+                  href="https://github.com/DEV-Bradly"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="gap-2"
